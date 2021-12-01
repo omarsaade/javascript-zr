@@ -1,10 +1,10 @@
-/* window.onload = function() {
- document.querySelector("h1").style.color = "red";}
- wait the window to load 
- btkhalik tektob w ta3mul reload  elo lama ykun demen <head></head> 
- li2an iza ma ken fi window.onload = function() {} w hatayna script bel
- head w fia esem el file js w bel body fi el html malah ytabe2 el ossa,
- so ya nhet he el tari2a aw nhet el script ekher el body w nrayeh rasna */
+//  window.onload = function() {
+//  document.querySelector("h1").style.color = "red";}
+//  wait the window to load 
+//  btkhalik tektob w ta3mul reload  elo lama ykun demen <head></head> 
+//  li2an iza ma ken fi window.onload = function() {} w hatayna script bel
+//  head w fia esem el file js w bel body fi el html malah ytabe2 el ossa,
+//  so ya nhet he el tari2a aw nhet el script ekher el body w nrayeh rasna */
 
 //  window.alert("hello");
 //  document.write("<h1>gelloooo</h1>");
@@ -49,8 +49,51 @@
 // console.log(a,b);// bta3mul space la 7ala ben el a and b
 
 
+// let a = "we love";
+// let b = "javascript";
+// let c = "and";
+// let d = "programming";
+//  console.log(a +" "+ b + "\n" + c + " " + d);
+//  console.log(`${a} ${b} "" '' \\ ${100+200}
+//  ${c} ${d}`);
 
 
+// let title = "el zerop"
+// let desc = "el zero web school";
+
+// // // or
+// let markup = `
+// <div class = "card>
+// <div class= "child"
+// <h2>${title}</h2>
+// <p>${desc}</p>
+// </div>
+// </div>
+// `;
+// document.write(markup);
+
+
+// let Title = "hello elzero", Description = "ELzeroweb school", Date = "25/10";
+
+// let markup = `
+// <div>
+// <div>
+// <h3>${Title}</h3>
+// <p>${Description}</p>
+// <span>${Date}</span>
+// </div>
+// </div>
+
+// `;
+// document.write(`${markup} ${markup} ${markup} ${markup}`);
+// let a = "10";
+// let b = 20;
+// let c = true;
+// console.log(10 / 2);
+// console.log(10 * -2);
+// console.log( b + c); jaweb 21
+// console.log(a + b + c); jaweb 1020true
+// console.log(+a + b + c); jaweb 31
 
 
 
