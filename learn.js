@@ -192,4 +192,27 @@
 // console.log(a.split("", 6));  ['E', 'L', 'z', 'e','r','o']
 
 
+//v29
+// let a = "Elzero web school";
+// console.log(a.length); 17
+// console.log(a.substring(2, 6)); zero
+// console.log(a.substring(6, 2)); zero
+// console.log(a.substring(-10, 6)); elzero
+// console.log(a.substring(a.length - 5, a.length - 3)); ch
+
+// console.log(a.substr(0, 6)); elzero
+// console.log(a.substr(17));
+// console.log(a.substr(-3)); ool
+// console.log(a.substr(-5, -2)); ch
+
+// console.log(a.includes("Web")); true
+// console.log(a.includes("Web", 8)); false ballash 3ad men 8
+
+// console.log(a.startsWith("E")); true
+// console.log(a.startsWith("E", 2)); false
+// console.log(a.startsWith("zero", 2)); true
+// console.log(a.endsWith("ro", 6)); false yantahi bi ro ?
+
+
+
 
