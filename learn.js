@@ -95,21 +95,101 @@
 // console.log(a + b + c); jaweb 1020true
 // console.log(+a + b + c); jaweb 31
 
+// a = 14
+// c = 82
+// b = 21
+
+// c = 81
+// b = 21
+// a = 13
+// b = 22
+// 81 + 21 + 13 * 21 - 22 * 13 + 12 - 1
+
+// 100 console.log(++a + +b++ + +c++ - +a++);
+// 100 console.log(++a + - b + c++ - -a++ + a);
+// 100 console.log(--c + +b + --a * +b++ - +b * a + --a_ + true);
+
+// console.log(- d + ++e * 2 + ++f);173
+
+// video 23
+// console.log(1000000);
+// console.log(1_000_000);
+// console.log(1e6);
+// console.log(10 ** 6);
+// console.log(10 * 10 * 10 * 10 * 10 * 10);
+// console.log(1000000.0)
+
+// console.log(Number.MAX_SAFE_INTEGER);
+// console.log(Number.MAX_VALUE);
+// console.log(Number.MAX_VALUE + 2837373737);
 
 
 
+// video 24
+// console.log((100).toString());
+// console.log(100.10.toString());
+// console.log(100.3333.toFixed(2));
+// console.log(Number("100 osama"));
+// console.log(+ "100 osama");
+// console.log(parseInt("100 osama"));
+// console.log(parseInt("osama 100 osama"));
+// console.log(parseInt("100.500 osama"));
+// console.log(parseFloat("100.500 osama"));
+// console.log(Number.isInteger("100"));
+// console.log(Number.isInteger(100.500));
+// console.log(Number.isInteger(100));
+// console.log(Number.isNaN("osama"));
+
+// video 25
+// console.log(Math.round(99.2));
+// console.log(Math.round(99.5));
+
+// console.log(Math.ceil(99.2));
+// console.log(Math.floor(99.9));
+// console.log(Math.min(10, 20, 100, -100, 90));
+// console.log(Math.max(10, 20, 100, -100, 90));
+// console.log(Math.max(10, 20, 100, -100, 90));
+// console.log(Math.pow(2, 4));
+// console.log(Math.random());
+// console.log(Math.trunc(99.5));
+
+// v26
+
+// console.log(Math.trunc(Math.min(1_00, 2_00.5, 1e2, 2.4)));
+// console.log(1_00 ** Math.trunc(2.4));
+// console.log(Math.round(2.4));
+// console.log(Math.floor(2.4));
+// console.log(Math.trunc(2.4));
+// console.log(Math.trunc(2.4 * 0.834));
+
+// console.log(Math.floor(2_00.5)/Math.ceil(2.4));
+// console.log(Math.ceil(2_00.5)/Math.ceil(2.4));
 
 
+// v27
+// let theName = "  ahmed  ";
+// console.log(theName);
+// console.log(theName[1]);
+// console.log(theName[5]);
 
+// console.log(theName.charAt(1));
+// console.log(theName.charAt(5));
+// console.log(theName.length);
+// console.log(theName.trim());
+// console.log(theName.toUpperCase());
+// console.log(theName.toLowerCase());
+// console.log(theName.trim().charAt(2).toUpperCase());
 
-
-
-
-
-
-
-
-
+// v28
+// let a = "ELzero web School"; 
+// console.log(a.indexOf("web"));7
+// console.log(a.indexOf("web", 8)); -1
+// console.log(a.indexOf("o"));5
+// console.log(a.lastIndexOf("o"));15
+// console.log(a.slice(2, 6));zero
+// console.log(a.slice(-5, -3));ch
+// console.log(a.repeat(5));el zero web school tabe5 5 marrat
+// console.log(a.split("", 6));  ['E', 'L', 'z', 'e','r','o']
 
 
 
