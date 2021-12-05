@@ -214,5 +214,124 @@
 // console.log(a.endsWith("ro", 6)); false yantahi bi ro ?
 
 
+//v30
+// let a = "Elzero Web School";
+// console.log(a.slice(2, 6));
+// console.log((a.toUpperCase().slice(13, 14)).repeat(5));
+// console.log(a.substr(0, 6).split());
+// console.log(a.substr(0, 6) + " " + a.substr(11, 17));
+
+//v31
+// console.log(10=="10"); true
+// console.log(-100 == "-100"); true
+// console.log(10==="10");false
+// console.log(10 !== "10");
+// console.log(10 !== 10);
+// console.log(10 > 10);
+// console.log(10 >= 10);
+
+// console.log("osama" === "ahmed"); false
+// console.log(typeof "osama" === typeof"ahmed"); true
+
+//v32
+// console.log(true); true
+// console.log(!true); false
+// console.log(!(10 == "10"));false
+// console.log(10 == "10 " && 10>8 && 10>50); false lezem ykun kellon true
+// console.log(10 == "10 " || 10>8 || 10>50); true , byekfe wahde menon tkun true
+
+
+
+//v33
+// let price = 100;
+// let discount = true;
+// let discountAmouny = 30;
+// let country = "KSA";
+
+// if (discount === true) {
+//     price -= discountAmount;
+
+// } else if (country === "egypt") {
+//     price -= 40;
+// } else if (country === "syria") {
+//     price -= 50;
+// } else {
+//     price -= 10;
+// }
+// console.log(price);
+
+
+// v34 nested if condition
+// let price = 100;
+// let discount = true;
+// let discountAmouny = 30;
+// let country = "KSA";
+// let student = true;
+
+// if (discount === true) {
+//     price -= discountAmount;
+
+// } else if (country === "egypt") {
+//     if (student === true) {
+//         price -= discountAmount + 30;
+//     } else {
+//         price -= discount + 10;
+//     }
+// } else if (country === "syria") {
+//     price -= 50;
+// } else {
+//     price -= 10;
+// }
+// console.log(price);
+
+
+// //   v35
+// let theName = "Mona";
+// let theGender = "Female";
+// let TheAge = 30;
+// if (theGender === "male") {
+//     console.log("mr");
+// } else {
+//     console.log("mrs");
+// }
+// // condition? if true : if false
+// theGender === "Male" ? console.log("Mr") : console.log("mrs");
+// let result = theGender === "Male" ? "mr" : "mrs";
+// document.write(result);
+
+// v36
+// console.log(Boolean(100));
+// console.log(Boolean(100));
+// console.log(Boolean(0));
+// console.log(Boolean(""));
+// console.log(Boolean(null));
+
+// let price = 0 ;
+// console.log(`The price is ${price || 200}`); null w flse w 0
+// console.log(`The price is ${price ?? 200}`); null w false
+
+//v37 challenge
+let st = "Elzero web school";
+if ("34" === "34") {
+
+    console.log("good");
+}
+
+if ("w || W" === "w") {
+    console.log("good");
+}
+if ("a != string " !== "string") {
+    console.log("good");
+}
+if ("" === "number") {
+    console.log("good");
+}
+if ("" === "ELzeroElzero") {
+    console.log("good");
+}
+
+
+
+
 
 
