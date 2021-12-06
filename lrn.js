@@ -112,4 +112,24 @@
 
 
 //v43
+// indexof(search element , from index (opot))
+// lastindexof(search element , from index (opot))
+// includes(valueofFind ,fromindex[opt])
 
+
+// let myfriends = ["ahmed", "mohamed", "sayed", "alaa", "ahmed"];
+// console.log(myfriends);
+// console.log(myfriends.indexOf("ahmed"));
+// console.log(myfriends.indexOf("ahmed", 2));
+
+// console.log(myfriends.lastIndexOf("ahmed"));
+// console.log(myfriends.lastIndexOf("ahmed", 2));
+
+// console.log(myfriends.includes("ahmed"));
+// console.log(myfriends.includes("ahmed", 2));
+
+// if (myfriends.lastIndexOf("osama") === -1) {
+//     console.log("not found");
+// }
+// console.log(myfriends.indexOf("osama"));
+// console.log(myfriends.indexOf("osama"));
