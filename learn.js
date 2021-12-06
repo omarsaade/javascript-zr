@@ -299,6 +299,8 @@
 // let result = theGender === "Male" ? "mr" : "mrs";
 // document.write(result);
 
+
+
 // v36
 // console.log(Boolean(100));
 // console.log(Boolean(100));
@@ -311,24 +313,24 @@
 // console.log(`The price is ${price ?? 200}`); null w false
 
 //v37 challenge
-let st = "Elzero web school";
-if ("34" === "34") {
+// let st = "Elzero Web school";
 
-    console.log("good");
-}
+// if (st * 2 === "34") {
+//     console.log("good"); // if ((st.length*2).toString() === "34") {  console.log("good");}
 
-if ("w || W" === "w") {
-    console.log("good");
-}
-if ("a != string " !== "string") {
-    console.log("good");
-}
-if ("" === "number") {
-    console.log("good");
-}
-if ("" === "ELzeroElzero") {
-    console.log("good");
-}
+// }
+// // position may change
+// if ("???" === "w") {
+//     console.log("good");//st[st.indexOf("W")].toLowerCase();
+// }
+// if ("???" !== "string") {
+//     console.log("good"); // if (st !== "string") {      console.log("good");}
+// }
+// if ("" === "number") {
+//     console.log("good");// typeof(st.length) === "number"
+// }
+
+
 
 
 
