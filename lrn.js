@@ -133,3 +133,297 @@
 // }
 // console.log(myfriends.indexOf("osama"));
 // console.log(myfriends.indexOf("osama"));
+
+
+// let myfriends = [10, "sayed", "ali", "90", 9000, 100, 20, "10", -20, -10];
+
+// console.log(myfriends);
+// console.log(myfriends.sort()); hasab yaane - , 0 ,1,2,string
+// console.log(myfriends.reverse());
+// console.log(myfriends.sort().reverse());
+
+
+//v45
+// let myFriends = ["ahmed","sayed","ali","osama","gamal","amer"];
+// console.log(myFriends);
+// console.log(myFriends.slice());
+// console.log(myFriends.slice(1));
+// console.log(myFriends.slice(1,3)); 2 bas mabye5do 3 deyman regle
+// console.log(myFriends.slice(-3));
+// console.log(myFriends.slice(1,-2));
+// console.log(myFriends.slice(-4,-2));
+// console.log(myFriends);
+
+// myFriends.splice(0,0 ,"sameer","samara"); ballesh men sefer shil 0 wzid tnen awal shi
+// myFriends.splice(0,1 ,"sameer","samara");
+// myFriends.splice(1,2,"sameer","samara");
+// console.log(myFriends);
+//
+
+//arrays methods
+// concat(array , array); =>return a new array
+//join(sperator) return a string
+
+// let myfriends = ["ahmed", "mhamad", "ali", "khaled", "hsein"];
+// let myNewfriends = ["samar", "samara"];
+// let schoolFriends = ["haytham", "raed"];
+
+// let allfriends = myfriends.concat(myNewfriends);
+// let allfriends = myfriends.concat(myNewfriends, schoolFriends);
+// let allfriends = myfriends.concat(myNewfriends, schoolFriends, "gamell", [1, 2]);
+
+// console.log(allfriends);
+
+// console.log(allfriends.join()); birrdedo string deyman ,bta3mul fasel
+// console.log(allfriends.join("")); no space
+// console.log(allfriends.join(" @ ")); space ma3 
+// console.log(allfriends.join("|"));
+// console.log(allfriends.join("|").toUpperCase());
+
+
+// let zero = 0;
+// let counter = 3;
+// let my = ["ahmed", "mazero", "elham", "osama", "gamal", "ammer"];
+
+
+// console.log(my.slice(zero, ++counter).reverse());
+
+// console.log(my.slice(++zero, --counter).reverse());  // zero = 1; counter = 3
+
+
+// my.slice(zero, counter).reverse().join('').replace('hamma',''); elzero
+
+
+// console.log(my.slice(zero, counter).reverse()[--zero].slice(zero, --counter) + my.slice(++zero, ++counter).reverse()[zero].slice(--counter)); elzero
+
+
+
+//example1
+// let myfriends = ["osama", "ahmed", "sayed", "ali", "amira"];
+// methods1
+//console.log(myfriends[0]);
+// console.log(myfriends[1]);
+// console.log(myfriends[2]);
+// console.log(myfriends[3]);
+// console.log(myfriends[4]);
+
+//methods 2
+// for (let i = 0; i < myfriends.length; i++) {
+
+//     console.log(myfriends[i]);
+// }
+
+
+
+
+//v49
+//example2
+// let myfriends = [1, 2, "osama", "ahmed", "sayed", "ali", "amira"];
+
+//methods 1
+// let onlynames = [];
+
+// for (let i = 0; i < myfriends.length; i++) {
+//     if (typeof myfriends[i] === "string") {
+//         onlynames.push(myfriends[i]);
+//     }
+
+// }
+// console.log(onlynames);
+
+
+
+
+
+
+//methods2
+// if (typeof myfriends[0] === "string") {
+//     onlynames.push(myfriends[0]);
+// }
+
+// if (typeof myfriends[1] === "string") {
+//     onlynames.push(myfriends[1]);
+
+// }
+// if (typeof myfriends[2] === "string") {
+//     onlynames.push(myfriends[2]);
+
+// }
+
+// if (typeof myfriends[3] === "string") {
+//     onlynames.push(myfriends[3]);
+
+// }
+
+// console.log(onlynames);
+
+// v50
+
+// let products = ["keyboard", "Mouse", "Pen", "Pad", "Monitor"];
+// let colors = ["Red", "green", "black"];
+// let models = [2020, 2021];
+
+// for (let i = 0; i < products.length; i++) {
+//     console.log("#".repeat(15));
+//     console.log(`${products[i]}`);
+//     console.log("#".repeat(15));
+//     console.log("colors:");
+//     for (let j = 0; j < colors.length; j++) {
+//         console.log(`${colors[j]}`);
+
+//     }
+//     console.log("models:");
+
+//     for (let k = 0; k < models.length; k++) {
+//         console.log(`${models[k]}`);
+
+//     }
+// }
+/////////////////////////////////////////
+
+//example1
+// let products = ["keyboard", 1, 2, "Mouse", "Pen", "Pad", "Monitor"];
+// let colors = ["Red", "green", "black"];
+
+// for (let i = 0; i < products.length; i++) {
+
+//     if (typeof products[i] === "number") {
+
+//         continue;  //bas tusal tla3 men kelshi khalas
+//         //continue yaane shill el number w kamel tibe3et el be2e rawe2
+//     }
+//     console.log(products[i]);
+// }
+
+//example2
+// let products = ["keyboard", "Mouse", "Pen", "Pad", "Monitor"];
+// let colors = ["Red", "green", "black"];
+
+// mainLoop: for (let i = 0; i < products.length; i++) {
+
+//     console.log(products[i]);
+//     nestedLoop: for (let j = 0; j < colors.length; j++) {
+//         console.log(`-${colors[j]}`);
+//         if (colors[j] === "green") {
+//             break nestedLoop; or break mainLoop;
+//         }
+
+//     }
+
+// }
+
+////////////////////////////
+
+//v52
+//method1
+
+// let products = ["keyboard", "Mouse", "Pen", "Pad", "Monitor"];
+
+// for(let i = 0 ; i< products.length; i++) {
+//     console.log(products[i]);
+// }
+
+
+
+
+
+// methods2
+// let products = ["keyboard", "Mouse", "Pen", "Pad", "Monitor"];
+// let i = 0;
+// for (; ;) {
+//     console.log(products[i]);
+//     i++; // or i = i + 2;
+
+//     if (i === products.length) break;
+// }
+
+/// v53
+// let products = ["keyboard", "Mouse", "Pen", "Pad", "Monitor"];
+// let colors = ["Red", "green", "black"];
+// let showCount = 5;
+// document.write(`<h1>${showCount} Products </h1> `);
+// for (let i = 0; i < showCount; i++) {
+//     document.write(`<div>`);
+//     document.write(`<h3>[${i + 1}] ${products[i]}</h3>`);
+//     for (let j = 0; j < colors.length; j++) {
+//         document.write(`<p>${colors[j]}</p>`);
+
+//     }
+//     document.write(`<p>${colors.join("|")}</p>`);
+//     document.write(`</div>`);
+// }
+
+// let products = ["keyboard", "Mouse", "Pen", "Pad", "Monitor"];
+
+//methods1
+// let index = 0;
+// while (index < products.length) { // iza hik nafezzzz
+//     console.log(products[index]);
+//     index += 1;
+// }
+
+
+// ma3ulmet
+
+// let index = 0;
+// while (index < 10) {
+//     console.log(index);
+//     index += 1;
+//     if (index === 3) {
+//         break;
+//     }
+// }
+/////////////////////////////////////////
+//
+
+
+
+//v55
+
+// let products = ["keyboard", "mouse", "Pen", "pad", "monitor"];
+
+// let i = 0;
+
+// do {
+//     console.log(i);
+//     i++;
+// } while (false);
+// console.log(i);
+
+
+
+// //v56
+// let myadmins = ["Ahmed", "Osama", "Sayed", "Stop", "Samera", "hsein"];
+// let myEmployees = ["Amgad", "Samah", "Ammeer", "Omar", "Othman", "Amany", "Samia", "hamd"];
+// let showCount = myadmins.length;
+// document.write(`<div>we Have X Admins </div>`);
+// document.write(`<div>we Have ${showCount} Admins </div> `);
+
+// for (let i = 0; i < myadmins.length; i++) {
+//     document.write(`<div>`);
+//     document.write(`<hr>`);
+
+
+//     document.write(`<p>the admins for team ${i + 1} is ${myadmins[i]}</p>`);
+
+
+//     document.write(`<h2>Team members</h2>`);
+
+
+
+
+//     for (let j = 0, n = 1; j < myEmployees.length; j++) {
+
+
+//         if (myadmins[i][0].toLowerCase() === myEmployees[j][0].toLowerCase()) {
+//             document.write(`<p>-${n}${myEmployees[j]}</p>`);
+
+//             n++;
+//         }
+
+
+//         document.write(`</div>`);
+//     }
+// }
+
+
