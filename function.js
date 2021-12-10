@@ -436,11 +436,9 @@
 // }
 // showText();
 
+///////////////////////////////////
 
 //v68 local and global scope
-
-
-
 // bi hayde bye5od men local iza ma la2a local fia bye5od men global
 // var x = 10; global
 // if (10 === 10) {
@@ -450,9 +448,172 @@
 
 // console.log(`From Global ${x}`);
 
+//v69
+// hayde example tamem
+// function parent() {
+//     let a = 10;
+
+
+//     function child() {
+//         console.log(a);
+
+
+//         function grand() {
+//             console.log(`From Grand ${a}`);
+
+//         }
+//         grand();
+//     }
+//     child();
+// }
+
+// parent();
+
+// hayda example bya3te error li2an mafi ye2ra bel 3akes
+// function parent() {
+//     let a = 10;
+
+
+//     function child() {
+//         console.log(a);
+//         console.log(`From Grand ${b}`);
+
+
+//         function grand() {
+//             let b = 100;
+//             console.log(`From Grand ${a}`);
+//             console.log(`From Grand ${b}`);
+
+//         }
+//         grand();
+//     }
+//     child();
+// }
+
+// parent();
+
+
+//70
+// challenge
+
+
+// let names = function (...name) {
 
 
 
+//     return `<p>STring :  [${name.join("], [")}]=> Done</p > `;
+// }
+// console.log(names("ali", "hasan", "ali"));
+
+
+
+// let names = (...name) => `<p>STring :  [${name.join("], [")}]=> Done</p > `;
+
+// console.log(names("ali", "hasan", "ali"));
+
+
+//challenge2
+// let mynumbers = [20, 50, 10, 60];
+
+
+// let calc = (one, two, ...nums) => Number(nums) + Number(one) + Number(two);
+// console.log(calc(10, 20, 50))// 80
+
+
+
+
+
+
+// v71
+// method1
+// let mynums = [1, 2, 3, 4, 5];
+// let newArray = [];
+// for (let i = 0; i < mynums.length; i++) {
+//     newArray.push(mynums[i] + mynums[i]);
+
+// }
+// console.log(newArray);
+
+
+// //methode2
+// let mynums = [1, 2, 3, 4, 5];
+// let addself = mynums.map(function (element, index, arr) {
+//     console.log(`Current Element => ${element}`);
+//     console.log(`Current Index => ${index}`);
+//     console.log(`Current Element => ${arr}`);
+//     console.log(`Current Element => ${this}`);
+//     return element + element;
+// }, 9);
+// console.log(addself);
+
+
+
+// // he teb3a la fo2 men baad tozbit w haraket
+// let myNums = [1, 2, 3, 4, 5];
+// let addself = myNums.map((a) => a + a);
+// console.log(addself);
+
+
+
+
+//methode3
+// let myNums = [1, 2, 3, 4, 5];
+// function addition(ele) {
+//     return ele + ele;
+
+// }
+
+
+// let add = myNums.map(addition);
+// console.log(add);
+
+
+//v72
+
+// let swappingcases = "ABCabbc"; // 3afna varaibale
+// let invertedNumbers = [1, -10, -20, 15, 100, -30];
+// let ignoreBooleans = "Elz123er4o";
+
+// let sw = swappingcases.split("").map(function (ele) { // wahde bt7awel el string la array btefsol kell haref la halo he wazifet split
+//     // wba3den map bta3mul new array tab3an w bt7et fia el array kelon  wb tenafez shrut
+//     return ele === ele.toUpperCase() ? ele.toLocaleLowerCase() : ele.toUpperCase(); // iz el 7aref huwe kbir 3melo sgir w iza ken sgir 3melo kbir
+// })
+//     .join("");// he bte2lub el array la string
+// console.log(sw);// tiba3a ekher natije
+
+
+
+// arroqw function
+
+
+
+// let sw = swappingcases.split("").map((ele) => ele === ele.toUpperCase() ? ele.toLocaleLowerCase() : ele.toUpperCase()).join("");
+// console.log(sw);
+
+
+
+
+
+
+
+
+
+
+
+
+// let sw = invertedNumbers.map(function (ele) {
+
+//     return -ele;
+// })
+// // he bte2lub el array la string
+// console.log(sw);// tiba3a ekher natije
+
+// let ign = ignoreBooleans.split("").map(function (ele) {
+
+//     return isNaN(parseInt(ele)) ? ele : "";
+// })
+//     .join("");
+// console.log(ign);
 
 
 
