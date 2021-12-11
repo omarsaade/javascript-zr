@@ -583,7 +583,7 @@
 
 
 
-// arroqw function
+// arrow function
 
 
 
@@ -608,7 +608,7 @@
 // // he bte2lub el array la string
 // console.log(sw);// tiba3a ekher natije
 
-// let ign = ignoreBooleans.split("").map(function (ele) {
+// let ign = ignoreBooleans.split("").filter(function (ele) {
 
 //     return isNaN(parseInt(ele)) ? ele : "";
 // })
@@ -619,6 +619,94 @@
 
 
 
+// filterrrrrrrrrrrrrrrrrrrrrrrrr
+
+//string filter
+// let friends = ["ahmed", "Sameh", "Sayed", "Asmaa", "Amgad", "Israa"];
+
+
+// let filtered = friends.filter(function (el) { // filter bta3mul condition w bte5od el true men el result 
+// taba3 condition
+//     return el.startsWith("A");
+
+// });
+// console.log(filtered);
+
+
+//numbers
+// let numbers = [10, 2, 20, 3, 5, 7, 11];
+// let fuf = numbers.filter(function (ele) {
+//     return ele % 2 === 0;
+// })
+// console.log(fuf);
+
+
+
+//v74
+// let mix = "A13BS2ZX";
+
+
+// let ign = mix.split("").filter(function (ele) {
+
+//     return !isNaN(parseInt(ele));
+// }).map(function (ele) {
+//     return ele * ele;
+
+// })
+//     .join("");
+// console.log(ign);
+
+
+// ex
+
+// let sentence = "I love FOOOOD Code to playing much";
+
+
+// let ign = sentence.split(" ").filter(function (ele) {
+
+
+//     return ele.length <= 4;
+
+// })
+//     .join(" ");
+// console.log(ign);
+
+//v75 reduce
+// let nums = [10, 20, 15, 30];
+// let add = nums.reduce(function (acc, Current, index, arr) {
+//     console.log(`acc => ${acc}`);
+//     console.log(`current element => ${Current}`);
+//     console.log(`Array => ${arr}`);
+//     console.log(acc + Current);
+//     return acc + Current;
+// }, 5);
+// console.log(add);// 15  35...+= 80
+
+
+//v76
+// let theBiggest = ["Bla", "Propaganda", "Other", "AAA", "Battery", "Test"];
+// let removeChars = ["E", "@", "@", "L", "Z", "@", "@", "E", "R", "@", "O"];
+// let check = theBiggest.reduce(function (acc, Current) {
+//     console.log(`Acc => ${acc}`);
+//     console.log(`current element => ${Current}`);
+//     console.log(acc.length > Current.length ? acc : Current);
+//     console.log(`#########`);
+//     return acc.length > Current.length ? acc : Current;
+// });
+// console.log(check);// 15  35...+= 80
+
+
+
+
+
+// let finalString = removeChars.filter(function (ele) {
+//     return !ele.startsWith("@");
+// })
+//     .reduce(function (acc, current) {
+//         return `${acc}${current}`;
+
+//     });
+// console.log(finalString);
 
 
 
@@ -626,10 +714,41 @@
 
 
 
+//v77
+
+// let allLis = document.querySelectorAll("ul li");
+// let allDivs = document.querySelectorAll(".content div");
+
+// allLis.forEach(function (ele) {
+//     ele.onclick = function () {
+//         // remove active Clas From all Elements
+//         allLis.forEach(function (ele) {
+//             ele.classList.remove("active");
+
+//         });
+//         // add active class to this Element
+//         this.classList.add("active");
+//         // Hide all Divs
+//         allDivs.forEach(function (ele) {
+//             ele.style.display = "none";
+//         });
+//     };
+
+// });
 
 
+// let myString = "1,2,3,EE,l,z,e,r,o,_,W,e,b,_,S,c,h,o,o,l,2,0,Z";
 
 
+// let ign = myString.replace(/,/g, '').replace(/_/g, " ").split("").filter(function (ele) {
+//     return isNaN(parseInt(ele));
+// }).filter((ele, idx) => idx).reverse() // E ,0 => 0
+//     .filter((ele, idx) => idx).reverse()
+
+
+//     .join('');
+
+// console.log(ign);
 
 
 
