@@ -125,7 +125,7 @@
 //     },
 
 // };
-// 
+//
 // console.log(user.age);
 // console.log(user.ageInDays());
 
@@ -302,7 +302,7 @@
 //v90
 //<div  class="product" >
 //<h3>text</h3>
-// <p>text</p> 
+// <p>text</p>
 //</div>
 
 //methode1
@@ -353,7 +353,18 @@
 // document.body.appendChild(myMainElement);
 
 //v91
+// let myElement = document.querySelector("div");
+// console.log(myElement);
+// console.log(myElement.children);//tag html
+// console.log(myElement.children[0]);
+// console.log(myElement.childNodes);//  Nodeslist     btker keslhi maktub kelshi kelshi
+// console.log(myElement.childNodes[0]);
 
+// console.log(myElement.firstChild);// element shu  maken
+// console.log(myElement.lastChild);// element shu maken
+
+// console.log(myElement.firstElementChild);//tag html
+// console.log(myElement.lastElementChild);//tag html
 
 
 
