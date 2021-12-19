@@ -191,236 +191,255 @@
 
 // });
 
-//v101
+//v101 challenge
+//exxx
+// let header = document.createElement("div");//div
+// let body = document.createElement("div");//div
+// let footer = document.createElement("div");//div
+// let table = document.createElement("table");//div
 
-let header = document.createElement("div");//div
-let body = document.createElement("div");//div
-let footer = document.createElement("div");//div
-let table = document.createElement("table");//div
-// let span = document.createElement("span");
-// let myHeadingText = document.createTextNode("Elzero");
-let ul = document.createElement("ul");
-let tr1 = document.createElement("tr");
-let tr2 = document.createElement("tr");
-let tr3 = document.createElement("tr");
-let tr4 = document.createElement("tr");
-let tr5 = document.createElement("tr");
-let td1 = document.createElement("td");
-let td2 = document.createElement("td");
-let td3 = document.createElement("td");
-let td4 = document.createElement("td");
-let td5 = document.createElement("td");
-let td6 = document.createElement("td");
-let td7 = document.createElement("td");
-let td8 = document.createElement("td");
-let td9 = document.createElement("td");
-let td10 = document.createElement("td");
-let td11 = document.createElement("td");
-let td12 = document.createElement("td");
-let td13 = document.createElement("td");
-let td14 = document.createElement("td");
-let td15 = document.createElement("td");
-let a1 = document.createElement("a");
-let a2 = document.createElement("a");
-let a3 = document.createElement("a");
-let a4 = document.createElement("a");
-let a5 = document.createElement("a");
-let l1 = document.createElement("li");
-let l2 = document.createElement("li");
-let l3 = document.createElement("li");
-let l4 = document.createElement("li");
-let l5 = document.createElement("li");
 
-a1.textContent = "Elzero";
-a2.textContent = "Home";
-a3.textContent = "about";
-a4.textContent = "service";
-a5.textContent = "contact";
+// let k = 1;
+// for (let i = 0; i < 5; i++) {
+//     let tr = document.createElement("tr")
+//     tr.style.border = "1px solid black";
+//     table.style.border = "4px solid black";
+//     table.appendChild(tr);
+//     for (let j = 0; j < 3; j++) {
+//         let td = document.createElement("td");
+//         let p = document.createElement("p");
+//         let pr = document.createElement("p");
+//         td.style.borderCollapse = "collapse";
+//         td.style.border = "8px solid black";
+//         tr.appendChild(td);
+//         td.appendChild(p);
+//         td.appendChild(pr);
+//         p.textContent = k++;
+//         pr.textContent = "product";
+//   }
+// }
+//finito
+
+
+// let ul = document.createElement("ul");
+
+// let a1 = document.createElement("a");
+// let a2 = document.createElement("a");
+// let a3 = document.createElement("a");
+// let a4 = document.createElement("a");
+// let a5 = document.createElement("a");
+// let l1 = document.createElement("li");
+// let l2 = document.createElement("li");
+// let l3 = document.createElement("li");
+// let l4 = document.createElement("li");
+// let l5 = document.createElement("li");
+
+
+
+// a1.textContent = "Elzero";
+// a2.textContent = "Home";
+// a3.textContent = "about";
+// a4.textContent = "service";
+// a5.textContent = "contact";
+
+
+
+// l5.className = "active";
+// l4.className = "active";
+// l3.className = "active";
+// l2.className = "active";
+// l1.className = "activo";
+
+// header.appendChild(ul);
+// ul.appendChild(l5);
+// ul.appendChild(l4);
+// ul.appendChild(l3);
+// ul.appendChild(l2);
+// ul.appendChild(l1);
+// l1.appendChild(a1);
+// l2.appendChild(a2);
+// l3.appendChild(a3);
+// l4.appendChild(a4);
+// l5.appendChild(a5);
+
+// body.appendChild(table);
+
+// document.body.appendChild(header);
+// document.body.appendChild(body);
+// let element = document.querySelector("ul");
+// let act = document.querySelector(".activo");
+// let ele = document.querySelectorAll(".active");
+// let f = document.querySelector("table");
+// let e = document.querySelectorAll("tr");
+// let p = document.querySelectorAll("td");
+// // let ele = document.querySelector(".c");
+// // let elem = document.querySelectorAll(".li");
+
+// // act.forEach((act) => {
+// //     act.style.padding = "14px 16px";
+// // });
+// // act.forEach((act) => {
+// //     act.style.padding = "block";
+// // });
+
+
+
+// ele.forEach((ele) => {
+//     ele.style.float = "right";
+//     ele.style.paddingLeft = "14px";
+//     ele.style.display = "block";
+// });
+
+
+// element.style.cssText = " list-style-type: none; margin: 0; padding: 0;overflow: hidden; font-size:20px";
+
+// act.style.cssText = "color :green; font-weight:bold";
+// f.style.cssText = "border: 1px solid black; width:100%";
+// // e.style.cssText = "border: 1px solid black;";
+// // d.style.cssText = "border: 1px solid black;";
+// // d.style.cssText = "border-collapse: collapse;";
+
+
+// p.forEach((p) => {
+//     p.style.fontSize = "20px";
+//     p.style.textAlign = "center";
+// });
+
+//v103
+// alert("ohhh");
+// console.log("yes");
+
+// let confirmMsg = confirm("Are you Sure?");//true or false
+// console.log(confirmMsg);
+
+// if (confirmMsg === true) {
+//     console.log("Item Deleted");
+
+// } else {
+//     console.log("Item not Deleted");
+// }
+
+
+// let confirmMsg = confirm("Are you Sure?");//true or false
+// console.log(confirmMsg);
+
+// if (confirmMsg === true) {
+//     console.log("Item Deleted");
+
+// } else {
+//     console.log("Item not Deleted");
+// }
+
+
+
+// let promptMsg = prompt("Good Day to you?", "write day with 3 char");
+// console.log(promptMsg);
+
+//v104
+//BOM browser object Model
+// --setTimeout(function ,Timeout, Addition Params)
+//-clearTimeout(Identifier)
+
+// setTimeout(function () {
+//     console.log(`Mgs`);
+// }, 3000);
+
+
+// setTimeout(msg, 3000);
+
+// function msg() {
+//     console.log(`hello pop , how was ur day?`);
+// }
+
+
+// setTimeout(msg, 3000, "omar", "23");
+
+// function msg(user, age) {
+//     console.log(`hello mr ${user} your agr is ${age}`);
+
+// }
+
+// let counter = setTimeout(msg, 3000, "omar", "23");
+//
+//
+// function msg(user, age) {
+// console.log(`hello mr ${user} your agr is ${age}`);
+//
+// }
+// let btn = document.querySelector("button");
+// btn.onclick = function () {
+// clearTimeout(counter);
+// }
+
+//v105
+//setInterval(function , Millseconds ,Additional Params)
+//clearInterval(Identifier)
+
+// setInterval(() => {
+//     console.log(`MSG`);
+// }, 1000);
+//
+
+// setInterval(sayMsg, 1000);
+//
+// function sayMsg() {
+// console.log(`IAM MESSAGE`);
+// }
 
 //
-td1.innerHTML = "1<br>product";
-td2.textContent = "product";
-td3.textContent = "product";
-td4.textContent = "product";
-td5.textContent = "product";
-td6.textContent = "product";
-td7.textContent = "product";
-td8.textContent = "product";
-td9.textContent = "product";
-td10.textContent = "product";
-td11.textContent = "product";
-td12.textContent = "product";
-td13.textContent = "product";
-td14.textContent = "product";
-td15.textContent = "product";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// header.className = "a";
-// span.className = "b";
-l5.className = "active";
-l4.className = "active";
-l3.className = "active";
-l2.className = "active";
-l1.className = "activo";
-
-
-
-
-
-
-// span.prepend(myHeadingText);
-
-
-
-
-
-
-
-
-
-
-tr1.appendChild(td1);
-tr1.appendChild(td2);
-tr1.appendChild(td3);
-
-tr2.appendChild(td4);
-tr2.appendChild(td5);
-tr2.appendChild(td6);
-
-tr3.appendChild(td7);
-tr3.appendChild(td8);
-tr3.appendChild(td9);
-
-tr4.appendChild(td10);
-tr4.appendChild(td11);
-tr4.appendChild(td12);
-
-tr5.appendChild(td13);
-tr5.appendChild(td14);
-tr5.appendChild(td15);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// header.prepend(span);
-
-table.appendChild(tr1);
-table.appendChild(tr2);
-table.appendChild(tr3);
-table.appendChild(tr4);
-table.appendChild(tr5);
-
-
-header.appendChild(ul);
-ul.appendChild(l5);
-ul.appendChild(l4);
-ul.appendChild(l3);
-ul.appendChild(l2);
-ul.appendChild(l1);
-l1.appendChild(a1);
-l2.appendChild(a2);
-l3.appendChild(a3);
-l4.appendChild(a4);
-l5.appendChild(a5);
-
-body.appendChild(table);
-
-
-
-
-
-
-document.body.appendChild(header);
-document.body.appendChild(body);
-let element = document.querySelector("ul");
-let act = document.querySelector(".activo");
-let ele = document.querySelectorAll(".active");
-let f = document.querySelector("table");
-let e = document.querySelectorAll("tr");
-let p = document.querySelectorAll("td");
-// let ele = document.querySelector(".c");
-// let elem = document.querySelectorAll(".li");
-
-// act.forEach((act) => {
-//     act.style.padding = "14px 16px";
-// });
-// act.forEach((act) => {
-//     act.style.padding = "block";
-// });
-
-
-
-ele.forEach((ele) => {
-    ele.style.float = "right";
-});
-
-ele.forEach((ele) => {
-    ele.style.paddingLeft = "14px";
-});
-
-ele.forEach((ele) => {
-    ele.style.display = "block";
-});
-
-
-
-element.style.cssText = " list-style-type: none; margin: 0; padding: 0;overflow: hidden; font-size:20px";
-
-act.style.cssText = "color :green; font-weight:bold";
-f.style.cssText = "border: 1px solid black; width:100%";
-// e.style.cssText = "border: 1px solid black;";
-// d.style.cssText = "border: 1px solid black;";
-// d.style.cssText = "border-collapse: collapse;";
-
-
-p.forEach((p) => {
-    p.style.fontSize = "20px";
-});
-
-
-
-
-
-
-
-
-
-
-
-
+// setInterval(sayMsg, 1000, "osama", 38);
+//
+// function sayMsg(user, age) {
+// console.log(`i am message for ${user} His Age is: ${age}`);
+// }
+//
+
+// let div = document.querySelector("div");
+// function countdown() {
+//     div.innerHTML -= 1;
+//     if (div.innerHTML === "0") {
+//         clearInterval(counter);
+//     }
+// }
+// let counter = setInterval(countdown, 1000);
+
+//v105
+//location Object
+// href Get / Set [URL || Hash || File || Mail]
+// protocol
+// reload()
+// repalce()
+// assign()
+
+
+console.log(location);
+console.log(location.href);
+
+// location.href = "https:/google.com";
+// location.href = "#sec02";
+// location.href = "https://developer.mozilla.org/en-US/docs/Web/JavaScript#reference";
+
+// console.log(location.host);
+// console.log(location.hostname);
+
+// location.href = "https://www.google.com/";
+// location.hostname="google.com";
+
+// console.log(location.hash);
+// location.replace("https://elzero.org");
+//bta3mul replace lal saf7a bel bet w bte5dak 3laya
+//location.assign("https://google.com")
+// bte5dak 3al saf7a
+
+
+
+// setTimeout(function () {
+// window.open("https://google.com", " _blank", "width=400,height=400,left=200,top=200");
+// }, 2000);
+
+//v108
+// console.log(history);
+// history api
+// history.back()
+// history.forward()
+// history.go(2)
