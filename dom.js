@@ -412,8 +412,8 @@
 // assign()
 
 
-console.log(location);
-console.log(location.href);
+// console.log(location);
+// console.log(location.href);
 
 // location.href = "https:/google.com";
 // location.href = "#sec02";
@@ -443,3 +443,147 @@ console.log(location.href);
 // history.back()
 // history.forward()
 // history.go(2)
+//v109
+// let myNewWindow = window.open("https://google.com", "", "width=500,height=500");
+// myNewWindow.focus()
+// myNewWindow.close()
+// myNewWindow.scrollTo(x,y)
+// myNewWindow.scrollBy(x,y)
+
+// window.scrollTo({
+// left:500,
+// top:200,
+// behavior:"smooth"
+// })
+
+//v110
+// let btn = document.querySelector('button');
+// window.onscroll = function () {
+//     if (window.scrollY >= 600) {
+//         console.log(`scrolling ${window.scrollY}`);
+//     }
+// }
+//      //else {
+// //         btn.style.display = "none";
+// //     }
+// // };
+
+// let btn = document.querySelector("button");
+// window.onscroll = function () {
+//     if (window.scrollY >= 600) {
+//         btn.style.display = "block";
+//     }
+
+//     else {
+//         btn.style.display = "none";
+//     }
+// };
+
+
+// let btn = document.querySelector("button");
+
+// window.onscroll = function () {
+//     if (window.scrollY >= 600) {
+//         btn.style.display = "block";
+//     } else {
+//         btn.style.display = "none";
+//     }
+// };
+
+// btn.onclick = function () {
+//     window.scrollTo({
+//         left: 0,
+//         top: 0,
+//         behavior: "smooth",
+//     });
+// }
+
+//v111
+//BOM
+//Local Storage
+// --setItem
+// --getItem
+// --removeItem
+// --clear
+// --Key
+// no expiration date , http and https , private tab
+
+// set
+
+// window.localStorage.setItem("color", "red");
+// window.localStorage.fontWeight = "bold";
+// window.localStorage["fontSize"] = "20px";
+//
+// remove one
+// window.localStorage.removeItem("color");
+
+// remove ALL
+// window.localStorage.clear();
+
+// get key
+// console.log(window.localStorage.getItem("color"));
+// console.log(window.localStorage.color);
+// console.log(window.localStorage["color"]);
+//
+// get key
+// console.log(window.localStorage.key(0));
+
+
+//set color in page
+// document.body.style.background = window.localStorage.getItem("color");
+
+// console.log(window.localStorage);
+// console.log(typeof window.localStorage);
+
+
+//v112
+// let lis = document.querySelectorAll("ul li");
+
+//meth1
+// lis.forEach(function (element) {
+//     element.onclick = function () {
+//         console.log(element.dataset.color);
+//     };
+// });
+
+//method2
+// let lis = document.querySelectorAll("ul li");
+
+// lis.forEach((li) => {
+//     li.addEventListener("click", (element) => {
+//         console.log(element.currentTarget.dataset.color);
+//     });
+// });
+
+let lis = document.querySelectorAll("ul li");// select li kell wahde
+let exp = document.querySelector(".experiment"); // select 3al class
+
+
+if (window.localStorage.getItem("color")) {
+    exp.style.backgroundColor = window.localStorage.getItem("color");
+    lis.forEach((li) => {
+        li.classList.remove("active");
+    });
+    document.querySelector(`[data-color="${window.localStorage.getItem("color")}"]`).classList.add("active");
+}
+
+
+
+lis.forEach((li) => { // fetna 3al array w mnshina 3a kell wahde
+    li.addEventListener("click", (e) => { // hatayna listener 3a kell li menon
+        // console.log(e.currentTarget.dataset.color);
+        // remove ative class from all
+        lis.forEach((li) => {
+            li.classList.remove("active");
+        });
+        // add active class to current element
+        e.currentTarget.classList.add("active");
+        // add current color to local storage
+        window.localStorage.setItem("color", e.currentTarget.dataset.color);
+        // change div backgroundColor 
+        exp.style.backgroundColor = e.currentTarget.dataset.color;
+
+    });
+
+});
+
