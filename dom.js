@@ -555,35 +555,62 @@
 //     });
 // });
 
-let lis = document.querySelectorAll("ul li");// select li kell wahde
-let exp = document.querySelector(".experiment"); // select 3al class
+// let lis = document.querySelectorAll("ul li");// select li kell wahde
+// let exp = document.querySelector(".experiment"); // select 3al class
 
 
-if (window.localStorage.getItem("color")) {
-    exp.style.backgroundColor = window.localStorage.getItem("color");
-    lis.forEach((li) => {
-        li.classList.remove("active");
-    });
-    document.querySelector(`[data-color="${window.localStorage.getItem("color")}"]`).classList.add("active");
+// if (window.localStorage.getItem("color")) {
+//     exp.style.backgroundColor = window.localStorage.getItem("color");
+//     lis.forEach((li) => {
+//         li.classList.remove("active");
+//     });
+//     document.querySelector(`[data-color="${window.localStorage.getItem("color")}"]`).classList.add("active");
+// }
+
+
+
+// lis.forEach((li) => { // fetna 3al array w mnshina 3a kell wahde
+//     li.addEventListener("click", (e) => { // hatayna listener 3a kell li menon
+//         // console.log(e.currentTarget.dataset.color);
+//         // remove ative class from all
+//         lis.forEach((li) => {
+//             li.classList.remove("active");
+//         });
+//         // add active class to current element
+//         e.currentTarget.classList.add("active");
+//         // add current color to local storage
+//         window.localStorage.setItem("color", e.currentTarget.dataset.color);
+//         // change div backgroundColor
+//         exp.style.backgroundColor = e.currentTarget.dataset.color;
+
+//     });
+
+// });
+
+
+//v113
+// window.localStorage.setItem("color", "red");
+// window.sessionStorage.setItem("color", "blue");
+
+
+// document.querySelector(".name").onblur = function () {
+//     // window.localStorage.setItem("input-name", this.value)
+//     //or
+//     window.sessionStorage.setItem("input-name", this.value)
+
+// }
+
+
+//v114
+
+
+let b = document.querySelector(".input");
+
+document.querySelector(".add").onclick = function () {
+    window.localStorage.setItem("tasks", b.value);
+    document.querySelector(".tasks").innerHTML = b.value;
+
+
 }
 
-
-
-lis.forEach((li) => { // fetna 3al array w mnshina 3a kell wahde
-    li.addEventListener("click", (e) => { // hatayna listener 3a kell li menon
-        // console.log(e.currentTarget.dataset.color);
-        // remove ative class from all
-        lis.forEach((li) => {
-            li.classList.remove("active");
-        });
-        // add active class to current element
-        e.currentTarget.classList.add("active");
-        // add current color to local storage
-        window.localStorage.setItem("color", e.currentTarget.dataset.color);
-        // change div backgroundColor 
-        exp.style.backgroundColor = e.currentTarget.dataset.color;
-
-    });
-
-});
 
