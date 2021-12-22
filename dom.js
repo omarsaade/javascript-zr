@@ -601,16 +601,262 @@
 // }
 
 
-//v114
+//v114 BOMMMMMMMMMMMM challengeeeeeeee
 
 
-let b = document.querySelector(".input");
+//informtion 3adyeeee
+/* <button id=”submit”>Submit</button>
+<script>
+const submitButton = document.getElementById(“submit”);
+submitButton.addEventListener(“click”, ()=>{
+alert(“The form has been submitted”);
+});
+</script> */
 
-document.querySelector(".add").onclick = function () {
-    window.localStorage.setItem("tasks", b.value);
-    document.querySelector(".tasks").innerHTML = b.value;
+// window.localStorage.setItem("tasks", b.value);
+// div.innerHTML += text.value + "<br>";
+
+// let text = document.querySelector(".input");// select input
+// var div = document.getElementById('myElementID');// select div
+// let submitButton = document.querySelector(".add");
 
 
-}
+// let todoArray = [];
 
+// submitButton.addEventListener("click", () => {
+
+//     div.innerHTML = div.innerHTML + text.value + "<br>";
+//     if (window.localStorage["tasks"]) {
+//         // m.forEach(myFunction);
+//         todoArray[0] = todoArray.push(localStorage.setItem("tasks", text.value));
+//         console.log(todoArray);
+//     }
+// });
+
+
+
+
+
+
+//noteeee1
+//input id =  "text"
+//button id = "add-task-btn"
+//div id ="listBox"
+
+
+
+
+
+
+
+//note2
+//first meth11111
+// const words = ['hello', 'bird', 'table', 'football', 'pipe', 'code'];
+// const capWords = words.forEach((word,index,arr) => {
+
+//   arr[index] = word[0].toUpperCase() + word.substring(1);
+// });
+// console.log(words);
+
+
+
+
+
+
+
+//seconde meth2
+//https://www.tabnine.com/academy/javascript/how-to-use-foreach-javascript/
+// const words = ['hello', 'bird', 'table', 'football', 'pipe', 'code'];
+// const capWords = words.forEach(capitalize);
+
+// function capitalize(word, index, arr) {
+//   arr[index] = word[0].toUpperCase() + word.substring(1);
+// }
+// console.log(words);
+
+////////////////////////////
+
+
+
+
+
+
+//importanteee
+//https://www.makeuseof.com/how-to-build-todo-list-app-using-javascript/
+
+/* <button id=”submit”>Submit</button>
+<script>
+const submitButton = document.getElementById(“submit”);
+submitButton.addEventListener(“click”, ()=>{
+alert(“The form has been submitted”);
+});
+</script> */
+//////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+// //hayda 7alll el challenegeeee
+// v114 bom challenge
+
+
+// const text = document.getElementById("text");
+// const addTaskButton = document.getElementById("add-task-btn");
+// const saveTaskButton = document.getElementById("save-todo-btn");
+// const listBox = document.getElementById("listBox");
+// const saveInd = document.getElementById("saveIndex");
+
+// //We need an array to store all the to-do tasks. Hence, we need to initialize one.
+// let todoArray = [];
+
+
+
+
+// // Adding Items to the To-Do List
+// addTaskButton.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     let todo = localStorage.getItem("todo");// jeble el value taba3 todo yalle bel localstorage. OMAR , ALI
+//     if (todo === null) {
+//         //In the above code, you have to fetch the array from the localStorage; if no array exists, we create a blank one.
+//         // Then we push the newly added task to the todoArray and store the whole array again in localStorage.
+//         todoArray = [];
+//     }
+
+//     // else {
+//     //     todoArray = JSON.parse(todo);// bt7awel men json la array(object)
+//     // }
+//     todoArray.push(text.value);
+//     text.value = "";// BTFADEE EL INPUT KELL MARRA
+//     localStorage.setItem("todo", JSON.stringify(todoArray));//jSON.stringify(todoArray) he bt7awel el array la json ["ali ","sami"]
+//     //Create a JSON string from a JavaScript object.  ["ali ","sami"]
+//     // console.log(JSON.stringify(todoArray)); // btsir string shakla bel console huwe     ["ali ","sami"]
+//     // localStorage.setItem("todo", todoArray);//    sami , ali
+
+//     // console.log(todoArray);// object yaane array
+//     displayTodo();
+// });
+
+
+
+// // // Displaying the To-Do List Changes
+// function displayTodo() {
+//     // let todo = localStorage.getItem("todo");
+//     // if (todo === null) {
+//     //     todoArray = [];
+//     // } else {
+//     //     todoArray = JSON.parse(todo);
+//     // }
+//     let htmlCode = "";//We put the HTML for the
+//     //to-do list inside a variable named htmlCode
+//     todoArray.forEach((list, ind) => {       //(omar,0) br (sami,1) same as (list ,index)
+//         htmlCode += `<div>
+//       <p>${list}</p>
+//       <button onclick='edit(${ind})'>Edit</button>
+//       <button onclick='deleteTodo(${ind})'>Delete</button>
+//    </div>`;
+//     });
+//     listBox.innerHTML = htmlCode;//<>innerHTML hon ntaba3 htmlcode</>
+// }
+
+
+
+
+
+// // Deleting Items From the To-Do List
+// function deleteTodo(ind) {
+//     // let todo = localStorage.getItem("todo");
+//     // todoArray = JSON.parse(todo); // bt7awel la array
+//     todoArray.splice(ind, 1);//3al 0 shelle 1
+//     localStorage.setItem("todo", JSON.stringify(todoArray));
+//     displayTodo();// After deleting the item, you have to store the changes to the localStorage and call the displayTodo()
+//     //function to reflect changes on the web page.
+// }
+
+
+
+
+// // // Updating Items in the To-Do List
+// function edit(ind) {
+//     saveInd.value = ind;//0  hayde hye li btektob el ta3dil fia w bedifo lal localstorage
+//     // let todo = localStorage.getItem("todo");
+//     // todoArray = JSON.parse(todo);
+//     //console.log(ind);
+//     text.value = todoArray[ind]; // todoArray[index] fia el kelme
+//     // console.log(todoArray[ind]);
+//     addTaskButton.style.display = "none";
+//     saveTaskButton.style.display = "block";
+// }
+
+
+
+
+
+// // // Updating Items in the To-Do List
+// saveTaskButton.addEventListener("click", () => {
+
+//     // let todo = localStorage.getItem("todo");
+//     // todoArray = JSON.parse(todo);
+//     let id = saveInd.value;//0
+
+//     todoArray[id] = text.value;//omaaro heta bel text.value
+//     // console.log(todoArray[id]);
+//     addTaskButton.style.display = "block";
+//     saveTaskButton.style.display = "none";
+//     text.value = "";
+//     localStorage.setItem("todo", JSON.stringify(todoArray));
+//     displayTodo();
+// });
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////new number hon tahet
+/////new number hon tahet
+/////new number hon tahet
+/////new number hon tahet
+/////new number hon tahet
+
+// let inputKey = document.getElementById("keyo");
+// let inputValue = document.getElementById("valuo");
+// let butteno = document.getElementById("butteno");
+// let divo = document.getElementById("divo");
+
+
+// butteno.addEventListener("click", () => {
+//     const a = inputKey.value;
+//     const b = inputValue.value;
+//     c = localStorage.setItem("name", b);
+
+//     divo.innerHTML = `${inputKey.value} : ${inputValue.value}`;
+
+
+// });
+
+
+////ma3ulme 3amme 3n el for each w kif mnekteba
+// const words = ['hello', 'bird', 'table', 'football', 'pipe', 'code'];
+// const capWords = words.forEach((word,index,arr) => {
+ 
+//   arr[index] = word[0].toUpperCase() + word.substring(1);
+// });
+// console.log(words);
+// VM439:6 (6) ['Hello', 'Bird', 'Table', 'Football', 'Pipe', 'Code'] 
+
+// or
+
+// const words = ['hello', 'bird', 'table', 'football', 'pipe', 'code'];
+// const capWords = words.forEach(capitalize);
+ 
+// function capitalize(word, index, arr) {
+//   arr[index] = word[0].toUpperCase() + word.substring(1);
+// }
+// console.log(words);
+
+// VM445:7 (6) ['Hello', 'Bird', 'Table', 'Football', 'Pipe', 'Code']
 
