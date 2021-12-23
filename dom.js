@@ -755,7 +755,7 @@ alert(“The form has been submitted”);
 //     // }
 //     let htmlCode = "";//We put the HTML for the
 //     //to-do list inside a variable named htmlCode
-//     todoArray.forEach((list, ind) => {       //(omar,0) br (sami,1) same as (list ,index)
+//     todoArray.forEach((list, ind) => {       //(ar,0) br (sami,1) same as (list ,index)
 //         htmlCode += `<div>
 //       <p>${list}</p>
 //       <button onclick='edit(${ind})'>Edit</button>
