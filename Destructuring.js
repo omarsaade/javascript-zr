@@ -337,34 +337,98 @@
 //v124
 //type of data
 
-let mySet = new Set([1, 1, 1, 2, 3, "A", "A"]);
-console.log(mySet);
+// let mySet = new Set([1, 1, 1, 2, 3, "A", "A"]);
+// console.log(mySet);
 
-//size
+// //size
 
-console.log(`Size of Elements Inside Set Is : ${mySet.size}`);
+// console.log(`Size of Elements Inside Set Is : ${mySet.size}`);
 
-let iterator = mySet.keys();
+// let iterator = mySet.keys();
 
-console.log(iterator.next().value);
-console.log(iterator.next().value);
-console.log(iterator.next().value);
-console.log(iterator.next().value);
-console.log(iterator.next());
+// console.log(iterator.next().value);
+// console.log(iterator.next().value);
+// console.log(iterator.next().value);
+// console.log(iterator.next().value);
+// console.log(iterator.next());
 
 
-//foreach
-mySet.forEach((el) => console.log(el));
-console.log("#".repeat(20));
+// //foreach
+// mySet.forEach((el) => console.log(el));
+// console.log("#".repeat(20));
 
-//WeakSet
-//type of data
-let myws = new WeakSet([{ A: 1, B: 2 }]);
+// //WeakSet
+// //type of data
+// let myws = new WeakSet([{ A: 1, B: 2 }]);
 
-console.log(myws);
+// console.log(myws);
 
 
 //values + keys [Alias For Values]
-let iter = myws.keys();//error la yujad hik shi bel weakset
+// let iter = myws.keys();//error la yujad hik shi bel weakset
 
-console.log(iter.next().value);
+// console.log(iter.next().value);
+
+
+//v125
+//map data vs object
+
+// --map => does not contain by default
+// --object=>has default keys
+
+// --map can be anthing [function,object, any Primitive dat types]
+// --object => string or Symbol
+
+
+// --map=> ordered by insertion
+// --object => not 100% till Now
+
+// --map=> get items by size
+// --object=> need to do manually
+
+// --map => can be directly iterated
+// --object => not directly and neede to use objects.keys()
+
+
+// let myObject = {};
+// let myEmptyObject = Object.create(null);
+// let myMap = new Map();
+
+
+// console.log(myObject);
+// console.log(myEmptyObject);
+// console.log(myMap);
+
+// let myNewObject = {
+//     10: "number",
+//     "10": "String",
+// };
+
+
+// console.log(myNewObject[10]);
+
+
+// let myNewMap = new Map();
+// myNewMap.set(10, "number");
+// myNewMap.set("10", "String");
+// myNewMap.set(true, "Boolean");
+// myNewMap.set({ a: 1, b: 2 }, "Object");
+// myNewMap.set(function doSomething() { }, "Function");
+
+// console.log(myNewMap.get(10));
+// console.log(myNewMap.get("10"));
+
+// console.log("####");
+
+
+// console.log(myNewObject);
+// console.log(myNewMap);
+
+
+
+
+
+
+
+
+
