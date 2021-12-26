@@ -425,10 +425,203 @@
 // console.log(myNewMap);
 
 
+//v126
+//Map Data Type
+// Methods
+// ----set
+// ----get
+// ------delete
+// ------clear
+// -------has
+
+
+// propreties
+// ------size
+
+// let myMap = new Map([
+//     [10, "number"],
+//     ["Name", "String"],
+//     [false, "Boolean"],
+// ]);
+
+
+//myMap.set(10,"Number");
+// myMap.set("Name","String");
+
+// console.log(myMap);
+
+
+// console.log(myMap.get(10));
+// console.log(myMap.get("Name"));
+// console.log(myMap.get(false));
+
+// console.log("####");
+
+// console.log(myMap.has("Name"));//true or false
+
+// console.log("###");
+
+// console.log(myMap.size);
+
+// console.log(myMap.delete("Name"));//true or false
+
+// myMap.clear();
+
+// console.log(myMap.size);
+
+
+/////////////////////////////////////////
+//v127
+//map byeb2a el key hata law nhat imto
+//null,byet7afaz el key bel memory
+
+
+//mawjude el sura bel screenshot wadha
 
 
 
 
+//weamap biellak el key undefined,,khalas kabo 3al zbele
+//li2an huwe weakly referenced
+
+// let mapUser = { thyeName: "Elzero" };
+
+// let myMap = new Map();
+
+// myMap.set(mapUser, "object Value");
+
+// mapUser = null;//override the reference
+
+// console.log(myMap);
+
+// console.log("#".repeat(20));
+
+// let wMapUser = { theName: "Elzero" };
+
+// let myWeakMap = new WeakMap();
+
+// myWeakMap.set(wMapUser, "object value");
+
+// wMapUser = null;
+
+// console.log(myWeakMap);
+
+///////////////////////////////////////////
+
+//v128
+// Array.from(iterable , mapfunc , this);
+// varaible
+// string numbers
+// set
+// using the map function
+// arrow function
+// shorten the Method +  use agruments
+
+// console.log(Array.from("1234aaa"));
+// console.log(Array.from("12345", function (n) {
+
+//     return +n + +n;
+// }
 
 
 
+// ));
+
+// console.log(Array.from("12345", (n) => +n + +n));
+
+// let myArray = [1, 1, 1, 2, 3, 4];
+
+// let mySet = new Set(myArray);
+
+// console.log(mySet); // jaweba huwe set
+// console.log(Array.from(mySet));//jaweba huwe array
+
+// // console.log([new Set(myArray)]);// set
+// console.log([...new Set(myArray)]);// array future
+
+// function af() {
+//     return Array.from(arguments);
+// }
+// console.log(af("osama", "ahmed", "sayed", 1, 2, 3));
+// //arguments is an Array-like object accessible inside functions that contains the
+// // values of the arguments passed to that function.
+
+
+
+// function func1(a, b, c) {
+//     console.log(arguments[0]);
+//     // expected output: 1
+
+//     console.log(arguments[1]);
+//     // expected output: 2
+
+//     console.log(arguments[2]);
+//     // expected output: 3
+//   }
+
+//   func1(1, 2, 3);
+
+//v129'
+//array.copyWithin
+
+
+
+
+// let myArray = [10, 20, 30, 40, 50, "A", "B"];
+
+// myArray.copyWithin(3);//[10,20,30,10,20,30,40]
+// myArray.copyWithin(4, 6);//[10,20,30,40,"B","A","B"]
+// myArray.copyWithin(4, -1);//[10,20,30,40,"B","A","B"]
+// myArray.copyWithin(1, -2); //[10,"A","B","40",50,"A","B"]
+// myArray.copyWithin(1, 5, 6) or(1, -2, -1);["10", "A", 30, 40, 50, "A", "B"]
+// console.log(myArray);
+
+
+
+//v130'
+// --Array.some(CallbackFunc(Element , Index , Array), This Argument)
+//--callbackfunc => the Curent Element to Process
+//index => undex of cureent element
+//array => the current Array working With
+//this Argument 
+
+let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];// array
+
+let myNumber = 10;
+
+// let check = nums.some(function (e) {
+//     console.log("Test");
+// }
+// );
+
+
+// let check = nums.some(function (e) {
+//     return e > this;
+// }, myNumber);
+
+
+// // let check = nums.some((e) => e > 5);
+// console.log(check);
+
+// function checkValues(arr, val) {
+//     return arr.some(function (e) {
+//         return e === val;
+
+//     });
+// }
+
+// console.log(checkValues(nums, 20));
+
+// console.log(checkValues(nums, 5));
+
+// let range = {
+//     min: 10,
+//     max: 20,
+// };
+
+// let checkNumberInRange = nums.some(function (e) {
+//     // console.log(this.min);
+//     // console.log(this.max);
+//     return e >= this.min && e <= this.max;
+// }, range);
+// console.log(checkNumberInRange);
