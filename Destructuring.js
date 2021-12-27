@@ -583,11 +583,15 @@
 //--callbackfunc => the Curent Element to Process
 //index => undex of cureent element
 //array => the current Array working With
-//this Argument 
+//this Argument
 
-let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];// array
 
-let myNumber = 10;
+// el some meth hye betaba2 function 3a kell 3onsor men 3anaser el array w bt3tiha sharet m3ayan ..law la2et hal sharet t7a2a2 bta3ti true
+// bi gad el naazar kam 3onsor fi bel array ,,hye ger 3n filter
+
+// let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];// array
+
+// let myNumber = 10;
 
 // let check = nums.some(function (e) {
 //     console.log("Test");
@@ -625,3 +629,94 @@ let myNumber = 10;
 //     return e >= this.min && e <= this.max;
 // }, range);
 // console.log(checkNumberInRange);
+
+//v131
+
+// Array.every(callbackFunc(Element , Index , Array),This Argument)
+//CallbackFunc => Function TO Run on every Element on The Given Array
+//--Element => the current  Element to Process
+//--index => Index of current Element
+// --Array=> the current Array working with
+// --this Argument => value to use as this when executing CallbackFunc
+// const locations = {
+//     20: "place 1",
+//     30: "place 2",
+//     50: "place 3",
+//     40: "place 4",
+// };
+
+// let mainLocation = 15;
+
+// let locationsArray = Object.keys(locations);
+
+// console.log(locationsArray);// he btjib object mehna badna array
+
+// let locationsArrayNumbers = locationsArray.map((n) => +n);
+
+// console.log(locationsArrayNumbers);
+
+// let check = locationsArrayNumbers.every(function (e) {
+//     return e > this;
+
+// }, mainLocation);
+// console.log(check);
+
+
+
+//v132
+//spread Operator => ...Iterable
+// "Allow Iterbale tp Expand In Place"
+
+//spread with String => Expand String
+
+// console.log("Osama");
+// console.log(..."Osama");
+// console.log([..."Osama"]);
+
+// //concatenate Arrays
+
+// let myArray1 = [1, 2, 3];
+// let myArray2 = [4, 5, 6];
+
+// let allArrays = [...myArray1, ...myArray2];
+
+// // console.log(allArrays);
+
+// //copy Array
+
+// let copiedArray = [...myArray1];
+// console.log(copiedArray);
+
+// //push Inside Array
+
+// let allFriends = ["Osama", "ahmed", "sayed"];
+// let thisYearFriends = ["sameh", "mahmoud"];
+
+// allFriends.push(...thisYearFriends);
+
+// console.log(allFriends);
+
+// //use with Math Object
+
+// let myNums = [10, 20, -100, 100, 1000, 500];
+// console.log(Math.max(...myNums));
+
+
+// //spread with Objects => Merge objects
+
+// let objOne = {
+//     a: 1,
+//     b: 2,
+// };
+
+// let objTwo = {
+//     c: 3,
+//     b: 4,
+// };
+
+// console.log({ ...objOne, ...objTwo, e: 5 });
+
+
+
+
+
